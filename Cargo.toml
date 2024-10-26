@@ -1,0 +1,26 @@
+[package]
+name = "sol_indexly"
+version = "0.1.0"
+edition = "2021"
+authors = ["https://github.com/Solindexly/solindexly.git"]
+description = "A lightweight CLI indexer for the Solana blockchain."
+homepage = "https://github.com/Solindexly/solindexly.git"
+repository = "https://github.com/Solindexly/solindexly.git"
+license = "MIT"
+
+
+[[bin]]
+name = "sol_indexly"
+path = "src/main.rs"
+
+
+[dependencies]
+solana-client = "1.11.4"
+solana-sdk = "1.11.4"
+tokio = { version = "1.8", features = ["full"] }
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+log = "0.4"
+env_logger = "0.9"
+clap = { version = "4.0", features = ["derive"] }
+
